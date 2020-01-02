@@ -1,0 +1,18 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FireFoxDriverDemo {
+
+	public static void main(String[] args)
+	{
+		//String Path;
+		// TODO Auto-generated method stub
+	//	Path=System.getProperty("user.dir")+"\\Driver\\geckodriver-v0.26.0-win64";
+	//	System.out.println(Path);
+		System.setProperty("webdriver.gecko.driver","F:\\Tests\\SeleniumDemo\\Driver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+	// Launch Application
+		driver.get("https://www.google.com/");
+			}
+	}
+

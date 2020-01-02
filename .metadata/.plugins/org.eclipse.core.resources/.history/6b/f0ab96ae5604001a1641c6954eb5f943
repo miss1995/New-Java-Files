@@ -1,0 +1,21 @@
+package InheritenceDemo;
+
+public class SingleDemo2  extends SingleInheritenceDemo{
+	int java,manual;
+	public void accept()
+	{
+		accept();
+		System.out.println("Enter marks of java");
+		java=sc.nextInt();
+		
+		System.out.println("Enter marks of Manual testing");
+		manual=sc.nextInt();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SingleDemo2 oo=new SingleDemo2();
+		oo.accept();
+	}
+
+}

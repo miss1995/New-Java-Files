@@ -1,0 +1,25 @@
+package LiqrooAppDemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LiqrooDemo
+{
+	WebDriver driver;
+	String path;
+   public void search() throws InterruptedException
+	{
+		 path=System.getProperty("user.dir") +"//Driver//chromedriver.exe"; 
+		 System.out.println(path);
+		 System.setProperty("webdriver.chrome.driver", path);
+		 driver=new ChromeDriver();	
+		 driver.get("https://liqroo.com/collections");
+		 
+	}
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		LiqrooDemo oo=new LiqrooDemo();
+		oo.search();
+	}
+
+}

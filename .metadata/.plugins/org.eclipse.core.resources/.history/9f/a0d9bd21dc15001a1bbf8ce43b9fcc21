@@ -1,0 +1,19 @@
+package Demo;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SignUpForm {
+	
+	 path=System.getProperty("user.dir") +"//Driver//chromedriver.exe"; 
+	 System.out.println(path);
+	 System.setProperty("webdriver.chrome.driver", path);
+	 driver=new ChromeDriver();	
+	 driver.get("https://my.monsterindia.com/find-companies.html");
+	 driver.manage().window().maximize();
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

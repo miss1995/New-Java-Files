@@ -1,0 +1,12 @@
+package Com.qa.TestBaseDemo;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Testbase 
+{
+	public static WebDriver driver;
+	public static Properties prop;
+
+}

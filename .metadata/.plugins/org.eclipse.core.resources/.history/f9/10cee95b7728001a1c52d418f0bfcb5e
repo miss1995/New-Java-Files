@@ -1,0 +1,28 @@
+package Com.qa.TestBaseDemo;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class Testbase 
+{
+	public static WebDriver driver;
+	public static Properties prop;
+	
+public Testbase() 
+	{
+		try
+		{
+		FileInputStream ip=new FileInputStream("F:\\Tests\\OrangeHRM\\src\\main\\java\\Com\\Orange\\Configration\\Config.properties");
+		prop=new Properties();
+		prop.load(ip);
+		}
+		catch(Exception e)
+		{
+		System.out.println("");	
+		}
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-12-30T17:16:44Z" name="Default suite" finished-at="2019-12-30T17:16:44Z" duration-ms="76">
+    <groups>
+    </groups>
+    <test started-at="2019-12-30T17:16:44Z" name="Default test" finished-at="2019-12-30T17:16:44Z" duration-ms="76">
+      <class name="com.orangehrm.TestCases.loginTestPages">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.TestCases.loginTestPages@1a84f40f]" started-at="2019-12-30T17:16:33Z" name="setUp" finished-at="2019-12-30T17:16:44Z" duration-ms="11187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTitleTest()[pri:0, instance:com.orangehrm.TestCases.loginTestPages@1a84f40f]" started-at="2019-12-30T17:16:44Z" name="verifyTitleTest" finished-at="2019-12-30T17:16:44Z" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.TestCases.loginTestPages@1a84f40f]" started-at="2019-12-30T17:16:45Z" name="tearDown" finished-at="2019-12-30T17:16:46Z" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.TestCases.loginTestPages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

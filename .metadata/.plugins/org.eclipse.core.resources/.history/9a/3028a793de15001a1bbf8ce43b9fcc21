@@ -1,0 +1,29 @@
+package Demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DemoScripts {
+	WebDriver driver;
+	String path,Title,url;
+	public void Launch() throws InterruptedException
+	{
+		//System.setProperty("webdriver.chrome.driver","F:\\Selenium software\\chromedriver.exe");
+		 path=System.getProperty("user.dir") +"//Driver//chromedriver.exe"; 
+		 System.out.println(path);
+		 System.setProperty("webdriver.chrome.driver", path);
+		 driver=new ChromeDriver();	
+		 driver.get("http://demo.guru99.com/test/newtours/register.php");
+		 driver.manage().window().maximize();
+		 driver.findElement(By.name("firstName")).sendKeys("admin");
+		 //driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		 
+	}
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		DemoScripts oo=new DemoScripts();
+		oo.Launch();
+	}
+
+}

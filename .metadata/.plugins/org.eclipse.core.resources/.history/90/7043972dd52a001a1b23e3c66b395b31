@@ -1,0 +1,14 @@
+package com.orangehrm.TestCases;
+
+import Com.Orangelive.Pages.LoginPage;
+import Com.qa.TestBaseDemo.Testbase;
+
+public class loginTestPages extends Testbase
+{
+	LoginPage loginpage;
+	public LoginTestPages()
+	{
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package OOPsDemo;
+
+public class ConstructorExample 
+{
+	int id;
+   String name;
+   String gender;
+   
+   public  ConstructorExample(int i,String n)
+   {
+	 i=id;
+	 n=name;
+   }
+   public ConstructorExample(int i,String n,String g)
+   {
+	 i=id;
+	 n=name;
+	 g=gender;
+   }
+   public void result()
+   {
+	   System.out.println(id+" "+name+" "+gender+" ");
+   }
+public static void main(String[] args)
+{
+	ConstructorExample C1=new ConstructorExample(111,"ram");
+	ConstructorExample C2=new ConstructorExample(111,"XYZ","Female");
+	C1.result();
+	C2.result();
+	
+	
+	
+}
+
+}

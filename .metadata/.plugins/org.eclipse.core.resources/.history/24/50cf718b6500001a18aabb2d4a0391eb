@@ -1,0 +1,27 @@
+package StringDemo;
+
+public class StringBufferDemo {
+	public void acc()
+	{
+		//StringBuffer sb=new StringBuffer("hello ");
+		//sb.append("how are you ?");
+		//System.out.println(sb);
+		
+		//StringBuffer sb=new StringBuffer("hello ");
+		//sb.reverse();
+		//System.out.println(sb);
+		
+		String st=new String("happy new year");
+		st.toUpperCase();
+		System.out.println(st);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        StringBufferDemo oo=new StringBufferDemo();
+        oo.acc();
+	}
+
+}
+
+

@@ -1,0 +1,33 @@
+package StringDemo;
+import java.util.Scanner;
+
+public class BadWordsDemo {
+	String[] arr= {"stupid","rascal","Nonsense"};
+	String sd;
+	String st;
+	String str;
+	private int length;
+	public void acc()
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter the string");
+		str=sc.nextLine();
+		for(int i=0;i<=length;i++)
+		{
+		 sd=arr[i].toString();
+		 if(st.contains(sd));
+		 str=str.replaceAll(sd,"****");
+		 
+		 
+		}
+		System.out.println(str);
+	}
+
+
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+              BadWordsDemo oo=new BadWordsDemo();
+               oo.acc();
+}
+}

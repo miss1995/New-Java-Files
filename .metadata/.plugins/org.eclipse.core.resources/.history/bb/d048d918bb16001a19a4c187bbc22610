@@ -1,0 +1,36 @@
+package Demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
+
+public class FatchTableDataDemo 
+{
+		WebDriver driver;
+		String path,Title,url,expTitle="google";
+		public void Launch() throws InterruptedException
+		{
+			//System.setProperty("webdriver.chrome.driver","F:\\Selenium software\\chromedriver.exe");
+			 path=System.getProperty("user.dir") +"//Driver//chromedriver.exe"; 
+			 System.out.println(path);
+			 System.setProperty("webdriver.chrome.driver", path);
+			 driver=new ChromeDriver();	
+			 driver.get("https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table");
+			 List<WebElement> colsCount = driver.findElements(By.xpath("//table[@name ='Basic HTML Table']/tbody/tr[2]/th[2]"));
+			 System.out.println("No of Colums " + colsCount.size());
+			 
+			 for(WebElement col :colsCount)
+			 {
+				System.out.println(col.getText()); 
+			 }
+		}
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		FatchTableDataDemo oo=new FatchTableDataDemo();
+		oo.Launch();
+	}
+
+}

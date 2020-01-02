@@ -1,0 +1,32 @@
+package JavaCodes;
+
+import java.util.Scanner;
+
+public class ReverseDemo {
+   int num;
+    int res=0,revNum,remainder;
+   
+    public void acc()
+    {
+    	System.out.println("Enter a Number you want reverse :");
+	    Scanner sc = new Scanner(System.in);
+	      num=sc.nextInt();
+	      
+	   while (num!=0)
+    	{
+    		remainder = num%10;
+            revNum = revNum*10 + remainder;
+            num /= 10;
+        }
+        System.out.println("Reversed Number"+revNum);
+
+    }
+     
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ReverseDemo oo=new ReverseDemo();
+		oo.acc();
+
+	}
+
+}

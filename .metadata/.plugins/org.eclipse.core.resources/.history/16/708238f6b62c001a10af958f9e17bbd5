@@ -1,0 +1,54 @@
+package OOPsDemo;
+
+public class CallingBaseClass 
+{
+	private String firstname;
+	private String secondname;
+	
+	public CallingBaseClass(String firstname,String secondname)
+	{
+	setFirstName(firstname);
+	setSecondName(secondname);
+	}
+	public String getFirstName()
+	{
+		return firstname;
+	}
+	public void setFirstName(String firstname)
+	{
+		 this.firstname=firstname;
+	}
+	public String getSecondName()
+	{
+		return secondname;
+	}
+	public void SecondName(String secondname)
+	{
+		 this.secondname=secondname;
+	}
+	
+public class emp extends CallingBaseClass
+	{
+	private int empid;	
+	
+	public emp(String firstname, String secondname, int empid)
+	{
+		super(firstname,secondname);
+		setEmpId(empid);	
+	}
+	public int setEmpId()
+	{
+		return empid;
+	}
+	public void empId(int empid)
+	{
+		 this.empid=empid;
+	}
+	
+	}
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

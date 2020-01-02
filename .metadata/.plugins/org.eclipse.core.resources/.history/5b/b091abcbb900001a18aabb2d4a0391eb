@@ -1,0 +1,15 @@
+package StringDemo;
+
+public class VowelsDemo {
+	String st;
+	public void ()
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

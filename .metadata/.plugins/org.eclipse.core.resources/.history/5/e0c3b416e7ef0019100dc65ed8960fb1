@@ -1,0 +1,20 @@
+package SwitchCase;
+import java.util.Scanner;
+
+public class SwitchCode {
+	int mh1,mh2,choice;
+	Scanner sc;
+	
+	
+	public void selectChoice()
+	{
+		System.out.println("Pizza\t2French Fries");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwitchCode mg=new SwitchCode();
+
+	}
+
+}

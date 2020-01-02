@@ -1,0 +1,38 @@
+package Demo;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SwitchTab 
+{
+        WebDriver driver;
+		String path,Title,url,expTitle="google";
+		public void Launch()
+		{
+			//System.setProperty("webdriver.chrome.driver","F:\\Selenium software\\chromedriver.exe");
+			 path=System.getProperty("user.dir") +"//Driver//chromedriver.exe"; 
+			 System.out.println(path);
+			 System.setProperty("webdriver.chrome.driver", path);
+			 driver=new ChromeDriver();	
+			 driver.get("https:/https://www.google.com/search?q=hd+wallpaper&oq=HD+w&aqs=chrome.1.69i57j0l5.9162j0j7&sourceid=chrome&ie=UTF-8/");
+			 
+			 String SelectLinkNewTab=Keys.chord(Keys.CONTROL,Keys.RETURN);
+			 driver.findElement(By.linkText("https://www.pexels.com/search/HD%20wallpaper/")).sendKeys(SelectLinkNewTab);
+			 
+	       ArrayList<String> tabs =new ArrayList<>(driver.getWindowHandles());
+      		 driver.switchTo().window(tabs.get(2));
+			 //.get("https://www.facebook.com/");
+		}
+			 
+			 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwitchTab oo=new SwitchTab();
+		oo.Launch();
+	}
+
+}

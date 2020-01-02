@@ -1,0 +1,38 @@
+package JavaCodes;
+
+import java.util.Scanner;
+
+public class ReverseDemo {
+   int num;
+    int res=0,revNum,remainder;
+   int temp=revNum;
+    public void acc()
+    {
+    	System.out.println("Enter a Number you want reverse :");
+	    Scanner sc = new Scanner(System.in);
+	      num=sc.nextInt();
+	      
+	   while (num!=0)
+    	{
+    		remainder = num%10;
+            revNum = revNum*10 + remainder;
+            num /= 10;
+            if(temp==revNum)
+            {
+            	System.out.println("palidrom number" );
+            }
+            else
+            {
+        System.out.println("Is not palidrom Number" );
+            }
+    	}
+    }
+     
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ReverseDemo oo=new ReverseDemo();
+		oo.acc();
+
+	}
+
+}

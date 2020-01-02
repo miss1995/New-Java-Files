@@ -1,0 +1,57 @@
+package OOPsDemo;
+
+public class ConstructorOverloading
+{
+int id;  
+String name;  
+int age;  
+//creating two arg constructor  
+ConstructorOverloading(int i,String n){  
+id = i;  
+name = n;  
+}  
+//creating three arg constructor  
+ConstructorOverloading(int i,String n,int a){  
+id = i;  
+name = n;  
+age=a;  
+}  
+void display()
+{
+	System.out.println(id+" "+name+" "+age);
+	}  
+
+public class Constructor2
+{
+int id1;  
+String name1;  
+int age1;  
+//creating two arg constructor  
+Constructor2(int i,String n){  
+id1 = i;  
+name1 = n;  
+}  
+//creating three arg constructor  
+Constructor2(int i,String n,int a){  
+id1 = i;  
+name1 = n;  
+age1=a;  
+}  
+void disp()
+{
+	System.out.println(id+" "+name+" "+age);
+	}  
+
+
+    public void main(String args[])
+    {  
+	ConstructorOverloading s1 = new ConstructorOverloading(111,"Karan");  
+	ConstructorOverloading s2 = new ConstructorOverloading(222,"Aryan",25);  
+	Constructor2 s3 = new Constructor2(333,"nryan"); 
+	Constructor2 s4 = new Constructor2 (444,"kryan",25); 
+     s1.display();  
+     s2.display();
+     
+}  
+}
+}

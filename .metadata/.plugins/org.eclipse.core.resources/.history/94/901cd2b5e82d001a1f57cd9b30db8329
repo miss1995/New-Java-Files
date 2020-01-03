@@ -1,0 +1,57 @@
+package OOPsDemo;
+
+ class emp 
+{
+	private String firstname;
+	private String secondname;
+	
+	public emp(String firstname,String secondname)
+	{
+	setFirstName(firstname);
+	setSecondName(secondname);
+	}
+	public String getFirstName()
+	{
+		return firstname;
+	}
+	public void setFirstName(String firstname)
+	{
+		 this.firstname=firstname;
+	}
+	public String getSecondName()
+	{
+		return secondname;
+	}
+	public void setSecondName(String secondname)
+	{
+		 this.secondname=secondname;
+	}
+}	
+public class emp extends emp
+	{
+	private int empid;	
+	
+	public emp(String firstname, String secondname, int empid)
+	{
+		super(firstname,secondname);
+		setEmpId(empid);	
+	}
+	public int getEmpId()
+	{
+		return empid;
+	}
+	public void setEmpId(int empid)
+	{
+		 this.empid=empid;
+	}
+	
+
+public static void main(String[] args) 
+{
+		// TODO Auto-generated method stub
+           emp oo=new emp("abc","xyz",234);
+           System.out.println(oo.getFirstName() +" "+ oo.getSecondName());
+           System.out.println(oo.getEmpId());
+	}
+
+}

@@ -6,14 +6,29 @@ public class Prime
 {
 public static void main(String[] args) 
 {
-	System.out.println("Enter the number");
-	int num = new Scanner(System.in).nextInt();
-	if (num % 2 == 0) {
-	System.out.println("Not prime");
-	}
-	else 
+	int num=0;
+	int prime=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the numbe to check");
+	num=sc.nextInt();
+	if(num%2==0 && num>=2)
 	{
-	System.out.println("Prime");
+	prime=0;
+
+	}
+	else
+	{
+	prime=1;
+	}
+	if(prime==0)
+	{
+	System.out.println(" prime number");
+	
+	}
+	else
+	{
+	System.out.println("not prime number");
+	
 	}
 	}
 }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;OOPsDemo.CallingBaseClass&apos; to &apos;emp&apos;&#x0D;&#x0A;- Original project: &apos;OperatorDemo&apos;&#x0D;&#x0A;- Original element: &apos;OOPsDemo.CallingBaseClass&apos;&#x0D;&#x0A;- Renamed element: &apos;OOPsDemo.emp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CallingBaseClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;OOPsDemo{CallingBaseClass.java[CallingBaseClass" matchStrategy="1" name="emp" qualified="false" references="true" similarDeclarations="false" stamp="1578028771497" textual="false" version="1.0"/>
+</session>
